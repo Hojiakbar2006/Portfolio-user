@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Glory;
+  src: url(../Font/Glory-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Glory;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ccc;
+}
+
+#root {
+  /* max-width: 1440px; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+#portfolio {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+#portfolio > #route-pages {
+  width: 100%;
+  height: 100%;
+  background: #f6f7fc58;
+  box-shadow: 0px 10px 90px #00000028;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid #fff;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

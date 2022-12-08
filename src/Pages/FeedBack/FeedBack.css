@@ -1,0 +1,80 @@
+#FeedBack {
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.feedForm > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.feedForm > div > div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  background: #f7f5f580;
+  backdrop-filter: blur(50px);
+  border-radius: 8px;
+  border: none;
+  font-weight: 350;
+  font-size: 15px;
+  color: #8d8b8b;
+  padding-left: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  backdrop-filter: blur(100px);
+  box-shadow: #00000040 0px 10px 20px, #00000038 0px 10px 8px;
+}
+
+.feedForm > textarea {
+  width: 70%;
+  border: none;
+  background: #f7f5f580;
+  color: #999;
+  backdrop-filter: blur(50px);
+
+  border-radius: 8px;
+  outline: none;
+  padding: 15px;
+  resize: none;
+}
+
+.feedForm > textarea:focus {
+  backdrop-filter: blur(100px);
+  box-shadow: #00000040 0px 10px 20px, #00000038 0px 10px 8px;
+}
+
+.feedForm > button {
+  padding: 6px 60px;
+  background: #1683f0;
+  border-radius: 10px;
+  color: #fff;
+  border: 2px solid #1683f0;
+  transition: all 0.3s ease;
+}
+.feedForm > button:hover {
+  background: transparent;
+  color: #1683f0;
+}
+.feedForm > button:active {
+  background: #1683f0;
+  color: #fff;
+}
