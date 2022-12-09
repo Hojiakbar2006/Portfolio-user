@@ -11,7 +11,7 @@
 .card {
   width: 250px;
   height: 250px;
-  margin: 10px;
+  margin: 20px;
   border-radius: 16px;
   overflow: hidden;
   /* backdrop-filter: blur(100px); */
@@ -53,13 +53,49 @@
   background: #00000092;
   transition: all 0.3s ease;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  gap: 30px;
 }
 
 .card:hover {
-  border: 2px solid #000000a0;
+  border: 2px solid #0000006b;
 }
 .card:hover > .modal-card {
   top: 0;
+}
+
+.modal-card > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.modal-card > button {
+  background: #1683f0;
+  border-radius: 6px;
+  padding: 6px 15px;
+  color: #fff;
+  border: 2px solid #1683f0;
+  transition: all 0.3s ease;
+}
+
+.modal-card > button:hover {
+  background: transparent;
+  border: 2px solid #fff;
+}
+.modal-card > button:active {
+  background: #1683f0;
+  border: 2px solid #1683f0;
+}
+
+.modal-card > div > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  margin-bottom: 5px;
 }

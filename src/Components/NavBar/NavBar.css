@@ -15,12 +15,31 @@
   border-radius: 50%;
 }
 
-#NavBar>.intro{
+#NavBar > .intro {
   width: 40%;
+  height: 50px;
   padding: 5px;
   color: #fff;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
+  position: relative;
+  /* background: #00000021; */
+  overflow: hidden;
+}
+
+.intro > h1 {
+  position: absolute;
+  transform: translateX(150%);
+  animation: scroling 10s linear infinite;
+}
+
+@keyframes scroling {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
 }
 
 #NavBar > .nav-item {
@@ -32,7 +51,7 @@
 
 .nav-item > a {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 24px;
   color: #ffffff;
   transition: all 0.3s ease;
   display: flex;

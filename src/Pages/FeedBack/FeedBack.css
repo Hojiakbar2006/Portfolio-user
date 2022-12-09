@@ -50,11 +50,11 @@ input:focus {
   background: #f7f5f580;
   color: #999;
   backdrop-filter: blur(50px);
-
   border-radius: 8px;
   outline: none;
   padding: 15px;
   resize: none;
+  transition: all 0.3s ease;
 }
 
 .feedForm > textarea:focus {

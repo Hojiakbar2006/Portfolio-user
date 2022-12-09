@@ -1,0 +1,39 @@
+#About {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+#About > .left {
+  width: 50%;
+}
+
+#About > .left > p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #031d36;
+}
+
+#About > .right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#About > .right > img {
+  width: 100%;
+}
