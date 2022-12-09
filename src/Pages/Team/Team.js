@@ -51,7 +51,7 @@ export function Team() {
     {
       id: 5,
       name: "Omadbek",
-      lastName: "Bilmayman",
+      lastName: "Umarboyev",
       level: "praktikant",
       githubLink: "",
       netlifyLink: "",

@@ -49,7 +49,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 30px;
+  position: relative;
 }
 
 #portfolio > #route-pages {
@@ -61,10 +62,37 @@ body {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 28px;
   border: 2px solid #fff;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  #portfolio {
+    padding: 28px;
+  }
+  #portfolio > #route-pages {
+    padding: 20px;
+  }
+}
+@media (max-width: 800px) {
+  #portfolio {
+    padding: 18px;
+  }
+  #portfolio > #route-pages {
+    padding: 16px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 600px) {
+  #portfolio {
+    padding: 10px;
+  }
+  #portfolio > #route-pages {
+    padding: 15px;
+  }
 }

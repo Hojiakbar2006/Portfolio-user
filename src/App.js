@@ -6,7 +6,7 @@ import { NavBar } from "./Components/NavBar/NavBar";
 import home from "./Assets/Imgs/Home.svg";
 import about from "./Assets/Imgs/About.svg";
 import feedBack from "./Assets/Imgs/FeedBack.svg";
-import LearnMore from "./Assets/Imgs/LearnMore.svg";
+import learnMore from "./Assets/Imgs/LearnMore.svg";
 import project from "./Assets/Imgs/Project.svg";
 import team from "./Assets/Imgs/Team.svg";
 import { Home } from "./Pages/Home/Home";
@@ -15,6 +15,7 @@ import { Team } from "./Pages/Team/Team";
 import { FeedBack } from "./Pages/FeedBack/FeedBack";
 import { NotFound } from "./Pages/NotFound/NotFound";
 import { Project } from "./Pages/Project/Project";
+import { LearnMore } from "./Pages/LearnMore/LearnMore";
 
 export function App() {
   const locationPath = useLocation().pathname;
@@ -25,37 +26,31 @@ export function App() {
       case "/":
         setStyle({
           bacImg: home,
-          bacColor: "",
         });
         break;
       case "/about":
         setStyle({
           bacImg: about,
-          bacColor: "",
         });
         break;
       case "/project":
         setStyle({
           bacImg: project,
-          bacColor: "",
         });
         break;
       case "/feed-send":
         setStyle({
           bacImg: feedBack,
-          bacColor: "",
         });
         break;
       case "/team":
         setStyle({
           bacImg: team,
-          bacColor: "",
         });
         break;
       case "/learn-more":
         setStyle({
-          bacImg: LearnMore,
-          bacColor: "",
+          bacImg: learnMore,
         });
         break;
       default:
@@ -81,6 +76,7 @@ export function App() {
     { name: "Our team", routeName: "/team", page: Team },
     { name: "Feedback", routeName: "/feed-send", page: FeedBack },
     { name: null, routeName: "*", page: NotFound },
+    { name: null, routeName: "/view/:id", page: LearnMore },
   ];
 
   return (

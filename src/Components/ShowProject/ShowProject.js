@@ -29,7 +29,7 @@ export function ShowProject({ data }) {
                 </a>
               </div>
               <button>Learn More</button>
-              <div>
+              <div className="emotion">
                 <button>
                   <img src={like} alt="" />
                   {item.like}
