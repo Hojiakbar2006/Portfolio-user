@@ -18,37 +18,37 @@ import { Project } from "./Pages/Project/Project";
 import { LearnMore } from "./Pages/LearnMore/LearnMore";
 
 export function App() {
-  const locationPath = useLocation().pathname;
+  const locationPath = useLocation().pathname.split("/").slice(1, 2).join();
   const [style, setStyle] = useState({});
 
   useEffect(() => {
     switch (locationPath) {
-      case "/":
+      case "":
         setStyle({
           bacImg: home,
         });
         break;
-      case "/about":
+      case "about":
         setStyle({
           bacImg: about,
         });
         break;
-      case "/project":
+      case "project":
         setStyle({
           bacImg: project,
         });
         break;
-      case "/feed-send":
+      case "feed-send":
         setStyle({
           bacImg: feedBack,
         });
         break;
-      case "/team":
+      case "team":
         setStyle({
           bacImg: team,
         });
         break;
-      case "/learn-more":
+      case "view":
         setStyle({
           bacImg: learnMore,
         });
@@ -85,7 +85,13 @@ export function App() {
         <NavBar route={route} />
         <Routes>
           {route.map((item, index) => {
-            return <Route path={item.routeName} element={<item.page />} />;
+            return (
+              <Route
+                key={index}
+                path={item.routeName}
+                element={<item.page />}
+              />
+            );
           })}
         </Routes>
       </div>

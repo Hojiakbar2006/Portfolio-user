@@ -6,14 +6,16 @@ import netlify from "../../Assets/Icons/NetlifyGr.svg";
 
 import like from "../../Assets/Icons/Like.svg";
 import disLike from "../../Assets/Icons/Dislike.svg";
+import { useNavigate } from "react-router-dom";
 
 export function ShowProject({ data }) {
   // const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <div id="ShowProject">
       {data.map((item) => {
         return (
-          <div className="card">
+          <div className="card" key={item.id}>
             <figure>
               <img src={item.img} alt="" />
             </figure>
@@ -28,7 +30,9 @@ export function ShowProject({ data }) {
                   <img src={netlify} alt="" />
                 </a>
               </div>
-              <button>Learn More</button>
+              <button onClick={() => navigate(`/view/${item.id}`)}>
+                Learn More
+              </button>
               <div className="emotion">
                 <button>
                   <img src={like} alt="" />

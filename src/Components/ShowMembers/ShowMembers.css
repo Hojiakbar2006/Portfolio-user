@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 60px;
 }
 
 .membersCard {
@@ -27,24 +27,47 @@
   margin-top: 10px;
 }
 
-.membersCard > div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 6%;
-    color: #fff;
+.membersCard > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+  color: #fff;
 }
 
-.membersCard > div>p{
+.membersCard > div > p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.membersCard > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12%;
+}
+
+@media (max-width: 1300px) {
+  .membersCard {
+    width: 300px;
+    height: 400px;
+  }
+
+  .membersCard > div > p {
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .membersCard > figure {
+    width: 100px;
+    min-height: 100px;
+    background: #fff;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     margin-top: 10px;
-}
-
-.membersCard > div>div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10%;
+  }
 }

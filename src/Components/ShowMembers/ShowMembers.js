@@ -11,7 +11,7 @@ export function ShowMembers({ data }) {
     <div id="ShowMembers">
       {data.map((item) => {
         return (
-          <div className="membersCard">
+          <div className="membersCard" key={item.id}>
             <figure></figure>
             <div>
               <h3>{item.name}</h3>

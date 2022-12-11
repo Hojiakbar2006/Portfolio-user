@@ -15,35 +15,36 @@ export function Home() {
     <div id="home">
       <div className="left">
         <p>
-          Nasriddinov Hojiakbar <span>Ikromjonovich</span>
+          Nasriddinov Hojiakbar <span>Ikromjon O'g'li</span>
         </p>
-        <div>
+        <div className="link-item">
           <div>
-            {" "}
             <a
               target="blank"
               href="https://www.instagram.com/hojiakbarnasriddinov0628/"
             >
               <img src={instagram} alt="" />
             </a>
-            <a href="https://t.me/hojiakbar0628">
+            <a target="blank" href="https://t.me/hojiakbar0628">
               <img src={telegram} alt="" />
             </a>
-            <a href="/">
+            <a target="blank" href="/">
               <img src={facebook} alt="" />
             </a>
-            <a href="https://github.com/Hojiakbar2006">
+            <a target="blank" href="https://github.com/Hojiakbar2006">
               <img src={github} alt="" />
             </a>
-            <a href="https://app.netlify.com/teams/hojiakbar2006/">
+            <a
+              target="blank"
+              href="https://app.netlify.com/teams/hojiakbar2006/"
+            >
               <img src={netlify} alt="" />
             </a>
-            <a href="/">
+            <a target="blank" href="/">
               <img src={bitbucket} alt="" />
             </a>
           </div>
           <a type="tel" href="tel:948620628">
-            {" "}
             +998(94) 862 0628
           </a>
         </div>
